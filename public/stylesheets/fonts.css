@@ -1,0 +1,16 @@
+
+@font-face {
+	font-family: proxima-r;
+	src: url(/fonts/ProximaNova-Reg.otf);
+}
+
+@font-face {
+	font-family: proxima-sb;
+	src: url(/fonts/ProximaNova-Sbold.otf);
+}
+
+@font-face {
+	font-family: vag-l;
+	src: url(/fonts/VAGRoundedStd-Light.otf);
+	letter-spacing: 2em;
+}

@@ -1,0 +1,126 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'proxima-r';
+}
+
+header {
+  height: 40px;
+  width: 100%;
+  background: rgb(75, 141, 204);
+}
+
+header img {
+  margin-left: 25px;
+}
+
+/****************************************/
+/*  SIDEBAR  */
+/****************************************/
+
+#sidebar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  background: rgb(51, 56, 59);
+  float: left;
+  font-family: 'proxima-r';
+}
+
+#segment_title {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  color: rgb(142, 176, 192);
+  background: rgb(78, 101, 124);
+  padding-top: 8px;
+  text-transform: uppercase;
+}
+
+.new_page {
+  padding: 2px 2px 2px 10px;
+  margin-bottom: 10px;
+  color: #686868;
+  border: 2px solid #686868;
+  background: rgb(51,56,59);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.new_page input {
+  color: #fff;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  width: 80%;
+  font-family: 'vag-l';
+  letter-spacing: .1em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.new_item_type {
+  float: left;
+  width: 118px;
+  height: 92px;
+  color: rgb(93, 118, 143);
+  background: rgb(51,72,93);
+  border: solid 1px rgb(32, 49, 63);
+  text-align: center;
+  padding-top: 23px;
+  font-family: 'proxima-sb';
+  font-size: .9em;
+}
+
+.new_item_type:hover {
+  background: rgb(61,82,103);
+}
+
+.icon {
+  display: block;
+  width:50px;
+  height:50px;
+  background-image: url('/sprites/Element-Icons.png');
+  position: relative;
+  left:32.5px;
+}
+
+.add_button {
+  display: inline-block;
+  min-width: 17px;
+  min-height: 17px;
+  background-image: url('/sprites/Add-Delete-Edit-Icons.png');
+  background-position: -13px -10px;
+  float: right;
+}
+
+.add_button:hover {
+  background-position: -13px -29px;
+}
+
+/****************************************/
+/*  CONTENT  */
+/****************************************/
+
+#content {
+  width:800px;
+  padding-left: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+  float: left;
+  font-family: 'proxima-r';
+}
+
+/****************************************/
+/*  OTHERS  */
+/****************************************/
+
+.shadow {
+  -webkit-box-shadow:  inset 0 2px 2px rgba(0,0,0,.6);
+  -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,.6);
+  box-shadow:  inset 0 2px 2px rgba(0,0,0,.6);
+}

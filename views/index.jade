@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  header
+    img(src="/sprites/Weebly-Logo.png")
+
+  section#sidebar
+    .shadow#segment_title templates
+    .shadow(style="padding:20px 30px 20px 30px;")
+      .new_page
+        input(placeholder="add new page")
+        a.add_button
+    .shadow#segment_title elements
+    .shadow
+      .new_item_type
+        a.icon#text(style="background-position: -63px -10px;")
+        span TEXT
+      .new_item_type
+        a.icon#image(style="background-position: -117px -10px;")
+        span IMAGE
+
+  section#content
