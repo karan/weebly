@@ -13,3 +13,7 @@ Without cache,
 With cache,
 
 ![](http://i.imgur.com/gyH8c2M.png)
+
+## License
+
+[No License](http://choosealicense.com/licenses/no-license/)
