@@ -58,7 +58,7 @@ exports.getPage = function(req, res) {
  * Create a new page
  */
 exports.createPage = function(req, res) {
-  User.findOne({ token: 'f574c551-928e-45e8-81c6-c964c12d5f34' }, function(err, doc) {
+  User.findOne({ token: req.body.user_id }, function(err, doc) {
     if (err) return err;
 
     var newPage = new Page({
