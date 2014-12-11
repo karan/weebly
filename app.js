@@ -77,7 +77,7 @@ app.get(constants.Google.CALLBACK,
 
 // API
 // GET /api/pages (Get all pages)
-app.get('/api/pages', auth.requiresLogin, api.allPages);
+app.get('/api/pages', api.allPages);
 // GET /api/page/:id (Get a specific page)
 app.get('/api/page/:id', auth.requiresLogin, api.getPage);
 // POST /api/pages (Create a new page)
