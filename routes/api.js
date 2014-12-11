@@ -120,7 +120,9 @@ exports.deletePage = function(req, res) {
         .remove(function(err) {
           if (err) return err;
 
-          return res.send(200);
+          client.delete(req.body.user_id + '_page' + req.params.id, function(_, _) {
+            return res.send(200);
+          });
         });
   });
 }
