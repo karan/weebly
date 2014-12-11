@@ -66,8 +66,8 @@ exports.createPage = function(req, res) {
     });
 
     newPage.page.page_id = req.user.last_page_id + 1;
-    newPage.page.title = req.body.title;
-    newPage.page.content = req.body.content;
+    newPage.page.title = req.body.title || '';
+    newPage.page.content = req.body.content || '';
 
     newPage.save(function(err, page) {
       if (err) return err;
@@ -78,7 +78,9 @@ exports.createPage = function(req, res) {
         client.set(req.body.user_id + '_page' + newPage.page.page_id,
           JSON.stringify(page),
           function(err, _) {
-            return res.send(200, page);
+            client.delete(req.body.user_id + '_pages', function(_, _) {
+              return res.send(200, page);
+            });
           }, 0);
       });
     });

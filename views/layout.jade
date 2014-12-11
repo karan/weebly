@@ -4,6 +4,10 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/fonts.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='shortcut icon', href='/sprites/w_favicon.ico')
+
+    script(src="//code.jquery.com/jquery-2.1.1.min.js")
+    script(type='text/javascript').
+      var user_id = "!{user_token}";
+    script(src="/javascripts/script.js")
   body
     block content
