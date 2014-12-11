@@ -50,7 +50,7 @@ header img {
   border-radius: 5px;
 }
 
-.page_list .existing_page {
+.existing_page {
   background: #518DCA;
   color: #fff;
   padding: 10px;
@@ -63,6 +63,45 @@ header img {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
+  border: 1px solid #686868;
+}
+
+.existing_page:hover {
+  background: #4F657B;
+}
+
+.edit_button {
+  display: none;
+  min-width: 17px;
+  min-height: 17px;
+  background-image: url('/sprites/Add-Delete-Edit-Icons.png');
+  background-position: -30px -10px;
+  float: right;
+}
+
+.existing_page:hover .edit_button {
+  display: inline-block;
+}
+
+.edit_button:hover {
+  background-position: background-position: -30px -29px;
+}
+
+.delete_button {
+  display: none;
+  min-width: 17px;
+  min-height: 17px;
+  background-image: url('/sprites/Add-Delete-Edit-Icons.png');
+  background-position: -48px -10px;
+  float: right;
+}
+
+.existing_page:hover .delete_button {
+  display: inline-block;
+}
+
+.delete_button:hover {
+  background-position: background-position: -48px -29px;
 }
 
 .new_page input {
@@ -100,7 +139,7 @@ header img {
   height:50px;
   background-image: url('/sprites/Element-Icons.png');
   position: relative;
-  left:32.5px;
+  left: 32.5px;
 }
 
 .add_button {
