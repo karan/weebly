@@ -28,6 +28,6 @@ var userSchema = new Schema({
   },
   access_token: String,
   refresh_token: String
-});
+}, { shardKey: { _id: 'hashed' }} );
 
 module.exports = mongoose.model('User', userSchema);
