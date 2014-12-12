@@ -98,13 +98,15 @@ exports.updatePage = function(req, res) {
       Page.findOne({ 'user_id': req.body.user_id, 'page.page_id': req.params.id },
         function(err, doc) {
           if (err) return err;
-          doc.page.title = req.body.title;
-          doc.page.content = req.body.content;
+          doc.page.title = req.body.title || doc.page.title;
+          doc.page.content = req.body.content || doc.page.content;
 
           doc.save(function(err, page) {
             if (err) return err;
 
-            return res.send(200);
+            client.delete(req.body.user_id + '_pages', function(_, _) {
+              return res.send(200);
+            });
           });
         });
     });
@@ -123,7 +125,9 @@ exports.deletePage = function(req, res) {
           if (err) return err;
 
           client.delete(req.body.user_id + '_page' + req.params.id, function(_, _) {
-            return res.send(200);
+            client.delete(req.body.user_id + '_pages', function(_, _) {
+              return res.send(200);
+            });
           });
         });
   });

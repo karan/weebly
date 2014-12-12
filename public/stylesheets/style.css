@@ -108,6 +108,16 @@ header img {
   background-position: background-position: -48px -29px;
 }
 
+.existing_page input {
+  padding: 5px;
+  border: none;
+  width: 80%;
+  font-family: 'vag-l';
+  letter-spacing: .1em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .new_page input {
   color: #fff;
   padding: 5px;
