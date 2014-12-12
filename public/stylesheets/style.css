@@ -66,6 +66,10 @@ header img {
   border: 1px solid #686868;
 }
 
+.existing_page.confirm, .existing_page.confirm:hover {
+  background: #d86a65;
+}
+
 .existing_page:hover {
   background: #4F657B;
 }
