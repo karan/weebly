@@ -174,12 +174,12 @@ header img {
 /****************************************/
 
 #content {
-  width:800px;
+  width: 750px;
   padding-left: 300px;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #fff;
-  float: left;
+  float: right;
   font-family: 'proxima-r';
 }
 
