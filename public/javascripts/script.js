@@ -19,6 +19,7 @@ $(function() {
     $.post('/api/pages', { title: $('.page_title').val(), user_id: user_id },
       function(data) {
         addPageToList(data.page.title, data.page.page_id);
+        $('.page_title').val('');
         bindDelete();
         bindEdit()
       });
